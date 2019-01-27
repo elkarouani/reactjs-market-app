@@ -4,9 +4,10 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import ProductList from './components/Product_List';
-import Details from './components/Details.js';
-import Cart from './components/Cart.js';
-import Default from './components/Default.js';
+import Details from './components/Details';
+import Cart from './components/Cart';
+import Default from './components/Default';
+import Modal from './components/Modal';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
           <Route path="/cart" component={Cart} />
           <Route component={Default} />
         </Switch>
+        <Modal />
       </React.Fragment>
     );
   }
